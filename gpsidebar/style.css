@@ -1,0 +1,235 @@
+body{
+    margin:0;
+    padding: 0;
+    width:100%;
+    length:100%;
+}
+/* CSS code for the sidebar */
+#sidebar {
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px; /* change this value as needed */
+    background-color: #222;
+    color: #fff;
+    transition: width 0.3s ease;
+    overflow-y: auto;
+}
+
+#sidebar ul .wuc-logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+#sidebar:hover {
+    width: 250px;
+}
+
+
+#sidebar li {
+    position: relative;
+    padding-bottom: 20px;
+    font-size: large;
+}
+
+#sidebar a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    background-color: #444;
+}
+
+#sidebar i {
+    margin-right: 10px;
+}
+
+#sidebar span {
+    position: relative;
+    top: -3px;
+}
+
+#sidebar .expand {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    background-color: #333;
+    display: none;
+}
+
+#sidebar li:hover .expand {
+    display: block;
+    transition: width 0.3s ease;
+}
+
+#sidebar .expand ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar .expand li {
+    position: relative;
+}
+
+#sidebar .expand a {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#sidebar .expand a:hover {
+    background-color: #555;
+}
+/*header*/
+
+#wucHomePage{
+
+    /*position:fixed;*/
+    width: 100%;
+    length:100%;
+    
+}
+
+#wucHomePageHeaderLogo{
+
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+#hrHeaderHomePage{
+
+    height: 50px;
+    background-color: #182278;
+    opacity: 0.8;
+    margin-top: 15px;
+}
+
+.sectionDivision{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+/*chatgpt*/
+section {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "sidebar main";
+  }
+  
+  #sidebar {
+    grid-area: sidebar;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    background-color: #222;
+    color: #fff;
+    transition: width 0.3s ease;
+    overflow-y: auto;
+  }
+  
+  #main {
+    position: absolute;
+    top: 0;
+    left: 200px; /* Width of the sidebar */
+    transition: left 0.3s ease;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+#sidebar:hover~#main{
+    left:250px;
+    transition: left 0.3s ease;
+}
+.wuc{
+    margin-top:4px;
+    left:4px;
+}
+/*table*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+
+  /*search bar*/
+  /* Style the search bar container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom:solid ;
+  }
+  
+  /* Style the input field */
+  .search-container input[type=text] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 50%;
+  }
+  
+  /* Style the search button */
+  .search-container button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* On hover, change background color of search button */
+  .search-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 600px) {
+    .search-container {
+      display: block;
+      margin-bottom: 20px;
+    }
+    .search-container input[type=text] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  a{
+    text-decoration: none;
+    color: blue;
+  }
